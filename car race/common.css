@@ -1,0 +1,137 @@
+
+/****************************************/
+/* common styles*/
+/****************************************/
+
+body{
+    font-family: Arial,Helvetica, sans-serif; }
+button#start{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+     background-color: red;
+}
+#startgame{
+    padding: 30px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: cursive;
+}
+#stats{ 
+    border: 2px solid rgb(230, 211, 211);
+    border-radius: 5px; 
+    }
+#controls{
+    width: 28em; 
+    float: left; 
+    padding: 1em; 
+    font-size: 0.7em; 
+}
+#controls th{
+    text-align: right; 
+    vertical-align: middle;
+    }
+#instructions{
+    clear: left;
+    float: left; 
+    width: 17em; 
+    padding: 1em; 
+    border: 1px solid rgb(226, 213, 213); 
+    box-shadow: 0 0 5px black; 
+}
+#racer{ 
+    position: relative; 
+    z-index: 0; 
+    width: 640px; 
+    height: 480px; 
+    margin-left: 20em; 
+    border: 2px solid rgb(221, 204, 204);
+ }
+#canvas{
+     position: absolute; 
+     z-index: 0; 
+     width: 640px; 
+     height: 480px; 
+     z-index: 0; 
+     background-color: #72D7EE;
+     border-radius: 10px;
+     }
+#mute{ background-position:   0px 0px;
+     width: 32px; height: 32px; 
+     background: url(images/mute.png); 
+     display: inline-block; 
+     cursor: pointer; 
+     position: absolute;
+      margin-left: 20em;
+     }
+#mute.on{ 
+    background-position: -32px 0px;
+ }
+
+/**************************************************/
+/* rudimentary heads up display  */
+/**************************************************/
+
+#hud{
+    position: absolute; 
+    z-index: 1;
+    width: 640px;
+    padding: 5px 0; 
+    font-family: Verdana, Geneva, sans-serif; 
+    font-size: 0.8em;
+    background-color: rgba(255,0,0,0.4); 
+    color: rgb(255, 255, 255);
+     border-bottom: 2px solid rgb(255, 255, 255); box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+#hud .hud{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px;
+    border: 1px solid rgb(230, 219, 219); 
+    margin: 0 5px; 
+    transition-property: background-color;
+    transition-duration: 2s; 
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 2s; }
+#hud #speed{ 
+    float: right;
+ }
+#hud #current_lap_time{ 
+    float: left; 
+ }
+#hud #last_lap_time{ 
+    float: left;
+    display: none; 
+    }
+#hud #fast_lap_time{
+    display: block;
+    width: 12em; 
+    margin: 0 auto;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 2s; 
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 2s; 
+}
+#hud .value{ color: rgb(0, 0, 0); 
+    font-weight: bold;
+ }
+#hud .fastest{
+     background-color: rgba(255,215,0,0.5); }
+
+body{
+    background-color: rgba(29, 26, 26, 0.912);
+    color: white;
+}
+.btn{
+    background-color: rgb(243, 226, 226);
+    border-radius: 5px;
+    border: 5px white;
+    padding:10px;
+}
